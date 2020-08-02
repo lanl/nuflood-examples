@@ -1,5 +1,5 @@
 # nuflood-examples
-Example instances for the Nuflood surface water simulation package
+Example instances for the Nuflood surface water simulation package.
 
 ## Usage at a glance
 To simulate a modeling scenario, from the project directory, execute a sequence of commands similar to
