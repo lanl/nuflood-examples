@@ -9,9 +9,16 @@ git submodule update --init --recursive
 ```
 
 ## Usage at a glance
-To simulate a modeling scenario, from the project directory, execute a command similar to
+To simulate a modeling scenario, from the project directory, execute a sequence of commands similar to
 ```bash
-/path/to/nuflood/executables/kurganov_petrova path/to/example.json
+mkdir path/to/example/output
+/path/to/nuflood/executables/kurganov_petrova path/to/example/scenario.json
+```
+
+For example, to run the flat rainfall example, execute
+```bash
+mkdir rainfall/flat/output
+/path/to/nuflood/executables/kurganov_petrova rainfall/flat/scenario.json
 ```
 
 ## License

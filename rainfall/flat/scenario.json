@@ -1,0 +1,46 @@
+{
+    "parameters": {
+        "boundaryConditions": {
+            "east": "open",
+            "north": "open",
+            "south": "open",
+            "west": "open"
+        },
+        "constants": {
+            "desingularizationConstant": 0.1,
+            "trackWetCells": false
+        },
+        "friction": {
+            "manningValue": 0.035
+        },
+        "infiltration": {
+            "hydraulicConductivityValue": 1.0e-5,
+            "moistureDeficitValue": 0.1,
+            "suctionHeadValue": 0.1
+        },
+        "output": {
+            "folder": "rainfall/flat/output/",
+            "grids": [
+                "depth",
+                "maxDepth"
+            ],
+            "printTime": true,
+            "printTimeStep": true,
+            "timeStep": 300.0
+        },
+        "sources": {
+            "rainfall": {
+                "grid": "rainfall/flat/rainfall.asc",
+                "stormCurve": "rainfall/flat/storm_curve.csv"
+            }
+        },
+        "time": {
+            "end": 43200.0,
+            "start": 0.0
+        },
+        "topography": {
+            "elevationFile": "rainfall/flat/elevation.asc",
+            "metric": true
+        }
+    }
+}
