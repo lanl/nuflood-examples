@@ -1,13 +1,6 @@
 # nuflood-examples
 Example instances for the Nuflood surface water simulation package
 
-## Installation
-To retrieve dependencies included as submodules (e.g., rapidjson), run:
-
-```bash
-git submodule update --init --recursive
-```
-
 ## Usage at a glance
 To simulate a modeling scenario, from the project directory, execute a sequence of commands similar to
 ```bash
