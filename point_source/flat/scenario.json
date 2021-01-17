@@ -1,0 +1,48 @@
+{
+    "parameters": {
+        "boundaryConditions": {
+            "east": "open",
+            "north": "open",
+            "south": "open",
+            "west": "open"
+        },
+        "constants": {
+            "trackWetCells": true
+        },
+        "friction": {
+            "manningValue": 0.035
+        },
+        "output": {
+            "folder": "point_source/flat/output/",
+            "grids": [
+                "depth",
+                "maxDepth"
+            ],
+            "printTime": true,
+            "printTimeStep": true,
+            "timeStep": 300.0
+        },
+        "sources": {
+            "points": [
+                {
+                    "hydrograph": "point_source/flat/point_source.csv",
+                    "x": 640.0,
+                    "y": 640.0
+                },
+                {
+                    "hydrograph": "point_source/flat/point_source.csv",
+                    "x": 1920.0,
+                    "y": 1920.0
+                }
+            ]
+        },
+        "time": {
+            "end": 21600.0,
+            "start": 0.0
+        },
+        "topography": {
+            "elevationFile": "point_source/flat/elevation.asc",
+            "metric": true
+        }
+    }
+}
